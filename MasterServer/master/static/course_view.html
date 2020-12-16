@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dominie - Online Education Courses HTML Template</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="http://127.0.0.1:8087/assets/css/vendor.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8087/assets/css/style.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8087/assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- preloader area start -->
+
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup end-->
+
+    <!-- log-in popup start-->
+    <div class="td-log-in-popup" id="td-log-in-popup">
+        <div class="container">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-5">
+                    <div class="log-in-wrap">
+                        <div class="thumb">
+                            <img src="http://127.0.0.1:8087/assets/img/logo-3.png" alt="img">
+                        </div>
+                        <p>Your student account is you portal to all things Dominie your classroom, projects, forums, carees, resources.</p>
+                        <a class="btn btn-white" href="#">Student</a>
+                        <a class="btn btn-border-white" href="#">Instructirs</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <div class="log-in-form">
+                        <!--  <button type="button" class="close">
+                            <span>&times;</span>
+                        </button> -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#pills-home">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#pills-profile">Register</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pills-home">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Username or email address*</label>
+                                        <input type="text" class="form-control" placeholder="youremail@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                    <a class="lost-password" href="#">Lost your password?</a>
+                                    <button type="submit" class="btn btn-base w-100">Login</button>
+                                    <div class="other-log-in-area text-center">
+                                        <h6>OR LOGIN WITH</h6>
+                                        <a class="btn btn-fb" href="#"><i class="fa fa-facebook"></i>FACEBOOK</a>
+                                        <a class="btn btn-google" href="#"><i class="fa fa-google"></i>GOOGLE</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Full Name</label>
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>User or email*</label>
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                    <a class="lost-password" href="#">Lost your password?</a>
+                                    <button type="submit" class="btn btn-base w-100">Login</button>
+                                    <div class="other-log-in-area text-center">
+                                        <h6>OR LOGIN WITH</h6>
+                                        <a class="btn btn-fb" href="#"><i class="fa fa-facebook"></i>FACEBOOK</a>
+                                        <a class="btn btn-google" href="#"><i class="fa fa-google"></i>GOOGLE</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- log-in popup end-->
+
+    <!-- navbar start -->
+    <div class="navbar-area navbar-area-1">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a class="main-logo" href="http://127.0.0.1:8087/index.html"><img src="http://127.0.0.1:8087/assets/img/logo.png" alt="img"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="search" href="#"><i class="fa fa-search"></i></a>
+                    <a class="btn btn-base log-in" href="#">Login</a>
+                </div>
+                <div class="nav-left-part">
+                    <div class="header-cat-menu">
+                        <i class="fa fa-th"></i>
+                        <a href="#">Courses</a>
+                        <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-building"></i> Business</a></li>
+                            <li><a href="#"><i class="fa fa-th"></i> Design</a></li>
+                            <li><a href="#"><i class="fa fa-code"></i> Development</a></li>
+                            <li><a href="#"><i class="fa fa-clone"></i> Marketing</a></li>
+                            <li><a href="#"><i class="fa fa-pencil-square-o"></i> Math</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="themefie_main_menu">
+                    <ul class="navbar-nav menu-open text-left pl-lg-5">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="index-2.html">Home 02</a></li>
+                                <li><a href="index-3.html">Home 03</a></li>
+                                <li><a href="index-4.html">Home 04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="course-view.html">Course View</a></li>
+                                <li><a href="course-view-2.html">Course View 2</a></li>
+                                <li><a href="instructor.html">Instructor</a></li>
+                                <li><a href="instructor-single.html">Instructor Single</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="search mr-2" href="#"><i class="fa fa-search"></i></a>
+                    <a class="btn btn-white log-in" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="course-view-details-inner pd-top-140 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="thumb">
+                        <img src="http://127.0.0.1:8087/assets/img/course/12.png" alt="img">
+                        <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-btn video-play-btn mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 align-self-center mt-4 mt-lg-0">
+                    <div class="details">
+                        <span class="sub-title">Web Development</span>
+                        <div class="rating-inner float-sm-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>(9054)</span>
+                        </div>
+                        <h3>{{info.teacherName}} {{info.fromSchool}}</h3>
+                        <ul class="introduction-list">
+                            <li>
+                                <p>面向学者</p>
+                                <span>{{info.studentLevel}}</span>
+                            </li>
+                            <li>
+                                <p>学生人数</p>
+                                <span>{{info.studentNumber}}</span>
+                            </li>
+                            <li>
+                                <p>教学时长</p>
+                                <span>{{info.teachTime}}</span>
+                            </li>
+                            <li>
+                                <p>课程数</p>
+                                <span>{{info.courseNum}}</span>
+                            </li>
+                        </ul>
+                        <ul class="price-area">
+                            <li><span>$36</span></li>
+                            <li><a class="btn btn-base" href="http://127.0.0.1:8087/chatroom/message.html" onclick="">私聊</a></li>
+                            <li><a class="btn btn-border" href="http://127.0.0.1:8087/student/bs?teacherId={{teacherId}}">现在拜师</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- course details start -->
+    <div class="course-details-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="dmne-tab-inner style-two text-center">
+                        <ul class="nav nav-tabs" id="ex1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1" data-toggle="pill" href="#ex1-tabs-1" role="tab" aria-selected="true">Overview</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2" data-toggle="pill" href="#ex1-tabs-2" role="tab" aria-selected="false">Discussions</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-3" data-toggle="pill" href="#ex1-tabs-3" role="tab" aria-selected="false">Projects & Resources</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-4" data-toggle="pill" href="#ex1-tabs-4" role="tab" aria-selected="false">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content text-left" id="ex1-content">
+                        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel">
+                            <div class="review-tab-inner">
+                                <p>{{teacherIntro}}</p>
+                                <h4 class="mt-3">你将学到什么</h4>
+                                <div class="row">
+                                    {% for canLearn in learnList.first%}
+                                    <div class="col-lg-6">
+                                        <ul class="dmne-list-inner">
+                                            <li>{{canLearn}}</li>
+                                        </ul>
+                                    </div>
+                                    {% endfor %}
+                                    {% for canLearn in learnList.second%}
+                                    <div class="col-lg-6">
+                                        <ul class="dmne-list-inner">
+                                            <li>{{canLearn}}</li>
+                                        </ul>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-lg-5">
+                                        <div class="thumb">
+                                            <img src="http://127.0.0.1:8087/assets/img/other/7.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="content">
+                                            <p>There are over 2 million apps on the App Store and growing. The only apps that do well are ones which are well designed both in terms of user interface and user. That's why it so to learn the design</p>
+                                            <p>There are over 2 million apps on the App Store and growing. The only apps that do well are ones which are well designed both in terms of user interface and user. That's why it so to learn the design</p>
+                                            <p>There are over 2 million apps on the App Store and growing. The only apps that do well are ones which are well designed both in terms of user interface and user. That's why it so to learn the design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                    opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                                    will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel">
+                            <div class="review-tab-inner">
+                                <p>{{teacherIntro}} </p>
+                                <h4 class="mt-3">What you’ll learn</h4>
+                                <div class="row mb-4">
+                                    <div class="col-lg-6">
+                                        <ul class="dmne-list-inner">
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="dmne-list-inner">
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                    opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                                    will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="single-course-inner">
+                                        <div class="thumb">
+                                            <img src="http://127.0.0.1:8087/assets/img/course/3.png" alt="img">
+                                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="meta">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>5,957 students</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <p>01h 49m</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5><a href="#">Motion Graphics: Create a Nice Typography Animation</a></h5>
+                                            <div class="price-inner">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>$33.99</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-course-inner">
+                                        <div class="thumb">
+                                            <img src="http://127.0.0.1:8087/assets/img/course/5.png" alt="img">
+                                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="meta">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>5,957 students</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <p>01h 49m</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5><a href="#">Motion Graphics: Create a Nice Typography Animation</a></h5>
+                                            <div class="price-inner">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>$33.99</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-course-inner">
+                                        <div class="thumb">
+                                            <img src="http://127.0.0.1:8087/assets/img/course/4.png" alt="img">
+                                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="meta">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>5,957 students</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <p>01h 49m</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5><a href="#">Motion Graphics: Create a Nice Typography Animation</a></h5>
+                                            <div class="price-inner">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>$33.99</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-course-inner">
+                                        <div class="thumb">
+                                            <img src="http://127.0.0.1:8087/assets/img/course/5.png" alt="img">
+                                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="meta">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>5,957 students</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <p>01h 49m</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5><a href="#">Motion Graphics: Create a Nice Typography Animation</a></h5>
+                                            <div class="price-inner">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>$33.99</p>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel">
+                            <div class="ratings-list-inner mb-4">
+                                <div class="row">
+                                    <div class="col-lg-3 align-self-center text-center">
+                                        <div class="total-avarage-rating">
+                                            <h2>5.0</h2>
+                                            <div class="rating-inner">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>Total 4 Ratings</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="counter-label"><i class="fa fa-star"></i>5</span>
+                                                    <span class="progress-bar-inner">
+                                                        <span class="progress">
+                                                            <span class="progress-bar" role="progressbar" aria-valuenow="100"
+                                                            aria-valuemin="0" aria-valuemax="100" style="width:100%"></span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="counter-count">9 Ratings</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="counter-label"><i class="fa fa-star"></i>4</span>
+                                                    <span class="progress-bar-inner">
+                                                        <span class="progress">
+                                                            <span class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                            aria-valuemin="0" aria-valuemax="100" style="width:80%"></span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="counter-count">2 Ratings</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="counter-label"><i class="fa fa-star"></i>3</span>
+                                                    <span class="progress-bar-inner">
+                                                        <span class="progress">
+                                                            <span class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                            aria-valuemin="0" aria-valuemax="100" style="width:0%"></span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="counter-count">0 Ratings</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="counter-label"><i class="fa fa-star"></i>2</span>
+                                                    <span class="progress-bar-inner">
+                                                        <span class="progress">
+                                                            <span class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                            aria-valuemin="0" aria-valuemax="100" style="width:0%"></span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="counter-count">0 Ratings</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="counter-label"><i class="fa fa-star"></i>1</span>
+                                                    <span class="progress-bar-inner">
+                                                        <span class="progress">
+                                                            <span class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                            aria-valuemin="0" aria-valuemax="100" style="width:0%"></span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="counter-count">0 Ratings</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dmne-review-inner">
+                                <ul>
+                                    <li>
+                                        <div class="media single-review-inner">
+                                            <div class="media-left">
+                                                <img src="http://127.0.0.1:8087/assets/img/team/1.png" alt="img">
+                                                <h6>Shobuj Roy</h6>
+                                                <p>UI Designer</p>
+                                                <div class="rating-inner">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <p>Everything was well taught.Love the techniques and passion put in.Please try to expand more on Email Marketting with practical examples on convetkit and mail chimp usage the same way you did on the wordpress
+                                                    course.Thank you and hope to enrol in your other courses.Thank you</p>
+                                                <a href="#"><i class="fa fa-reply"></i></a>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="media single-review-inner">
+                                                    <div class="media-left">
+                                                        <img src="http://127.0.0.1:8087/assets/img/team/1.png" alt="img">
+                                                        <h6>Shobuj Roy</h6>
+                                                        <p>UI Designer</p>
+                                                        <div class="rating-inner">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Everything was well taught.Love the techniques and passion put in.Please try to expand more on Email Marketting with practical examples on convetkit and mail chimp usage</p>
+                                                        <a href="#"><i class="fa fa-reply"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="media single-review-inner">
+                                            <div class="media-left">
+                                                <img src="http://127.0.0.1:8087/assets/img/team/1.png" alt="img">
+                                                <h6>Shobuj Roy</h6>
+                                                <p>UI Designer</p>
+                                                <div class="rating-inner">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <p>Everything was well taught.Love the techniques and passion put in.Please try to expand more on Email Marketting with practical examples on convetkit and mail chimp usage the same way you did on the wordpress
+                                                    course.Thank you and hope to enrol in your other courses.Thank you</p>
+                                                <a href="#"><i class="fa fa-reply"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media single-review-inner">
+                                            <div class="media-left">
+                                                <img src="http://127.0.0.1:8087/assets/img/team/1.png" alt="img">
+                                                <h6>Shobuj Roy</h6>
+                                                <p>UI Designer</p>
+                                                <div class="rating-inner">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <p>Everything was well taught.Love the techniques and passion put in.Please try to expand more on Email Marketting with practical examples on convetkit and mail chimp usage the same way you did on the wordpress
+                                                    course.Thank you and hope to enrol in your other courses.Thank you</p>
+                                                <a href="#"><i class="fa fa-reply"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="course-view-sitebar mt-5 mt-lg-0">
+                        <div class="widget widget-accordion-inner p-0">
+                            <h5 class="widget-title">Lesson List</h5>
+                            <div class="faq-accordion accordion" id="faq_accordion">
+                            </div>
+                        </div>
+                        <div class="widget widget-author-inner">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="http://127.0.0.1:8087/assets/img/other/7.png" alt="img">
+                                </div>
+                                <div class="media-body align-self-center">
+                                    <h5>Wilson martina</h5>
+                                    <p>UX & UI Designer</p>
+                                    <div class="rating-inner">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>I have been through most of the course. There is some great information in here. Some of it is really helpful. Because it is a long course there are going to be bits you might not need. But overall a really big help especially
+                                for the cost. Many thanks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- course details end -->
+
+    <!-- related-course start -->
+    <div class="related-course-area pd-top-135">
+        <div class="container">
+            <div class="section-title style-two">
+                <h2>相关课程推荐</h2>
+            </div>
+            <div class="row justify-content-center" id="related_teachers_remmond" onload="get_related_teachers()">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- related-course end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area pd-top-110">
+        <div class="container">
+            <div class="footer-top text-center">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <h2>Subscribe Newsletter</h2>
+                        <p>Small team with big ideas! We provide UI/UX Design, Development, premium WordPress themes, plugins</p>
+                        <div class="subscribe-inner-wrap">
+                            <input type="text" placeholder="Enter Your Email">
+                            <button class="btn btn-base">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="footer_navigator">
+
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumb">
+                            <img src="http://127.0.0.1:8087/assets/img/logo.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-right mt-3 mt-md-0 align-self-center">
+                        <p>©2020 <span>Themefie®</span>. All Rights <a href="http://www.bootstrapmb.com/">bootstrapmb</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <script type="text/javascript">
+        window.onload = function() {
+            // 右侧课程列表部分
+            var lesson_list_div = document.getElementById("faq_accordion");
+            var catagary = ["Introduction", "What is Design", "Getting Started", "Design Process"];
+            var lesson_list = [
+                [" 1. Introduction to the User Ex...", "2. Getting started with your ...", "3. What is UI vs UX - User In ...", "4. The UX brief & persona for...", "5. Wireframing ( low fidelity)..."],
+                [" 1. Introduction to the User Ex...", "2. Getting started with your ...", "3. What is UI vs UX - User In ...", "4. The UX brief & persona for...", "5. Wireframing ( low fidelity)..."],
+                [" 1. Introduction to the User Ex...", "2. Getting started with your ...", "3. What is UI vs UX - User In ...", "4. The UX brief & persona for...", "5. Wireframing ( low fidelity)..."],
+                [" 1. Introduction to the User Ex...", "2. Getting started with your ...", "3. What is UI vs UX - User In ...", "4. The UX brief & persona for...", "5. Wireframing ( low fidelity)..."]
+            ];
+            str = '';
+            for (var i = 0; i < 4; i++) {
+                str += '<div class="card">' +
+                    '<div class="card-header">' +
+                    '<button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree">' + catagary[i] + '<i class="fa fa-plus"></i><i class="fa fa-minus"></i></button>' +
+                    '</div>' +
+                    '<div id="collapseThree" class="collapse" data-parent="#faq_accordion">' +
+                    '<div class="card-body">' +
+                    '<ul>';
+                for (var j = 0; j < 5; j++) {
+                    str +=
+                        '<li>' +
+                        '<label class="single-select-inner">' +
+                        '<input type="checkbox" />' +
+                        '<span class="fa fa-check"></span>' +
+                        lesson_list[i][j] +
+                        '</label>' +
+                        '</li>';
+                }
+                str += '</ul>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            }
+            lesson_list_div.innerHTML = str;
+
+            // 推荐课程部分
+            var related_teacher_div = document.getElementById('related_teachers_remmond');
+            str = '';
+            teacher_name = ["Motion Graphics: Create a Nice Typography Animation"];
+            students_num = '5927';
+            rate = '4.9';
+            teached_hour = '01';
+            teached_munite = '49';
+            pay_money = '33.99';
+            for (var i = 0; i < 3; i++) {
+                str += '<div class="col-lg-4 col-md-6">' +
+                    '<div class="single-course-inner">' +
+                    '<div class="thumb">' +
+                    '<img src="http://127.0.0.1:8087/assets/img/course/3.png" alt="img">' +
+                    '<div class="rating">' + rate + '/5 <i class="fa fa-star"></i></div>' +
+                    '<a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>' +
+                    '</div>' +
+                    '<div class="details">' +
+                    '<div class="meta">' +
+                    '<div class="row">' +
+                    '<div class="col-6">' +
+                    '<p>' + students_num + ' students</p>' +
+                    '</div>' +
+                    '<div class="col-6 text-right">' +
+                    '<p>' + teached_hour + 'h ' + teached_munite + 'm</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<h5><a href="#">' + teacher_name[0] + '</a></h5>' +
+                    '<div class="price-inner">' +
+                    '<div class="row">' +
+                    '<div class="col-6">' +
+                    '<p>$' + pay_money + '</p>' +
+                    '</div>' +
+                    '<div class="col-6 text-right">' +
+                    '<a href="#"><i class="fa fa-shopping-cart"></i></a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    ' </div>' +
+                    '</div>';
+            }
+            related_teacher_div.innerHTML = str;
+
+            // 底部导航栏部分
+            var footer_navigator_div = document.getElementById("footer_navigator");
+            var footer_title = ["Categories", "Community", "Teaching", "Support"];
+            var footer_navi = [
+                ["All Courses", "Digital Marketing", "Design & Branding", "Adobe Creative Cloud", "Storytelling & Voice Over"],
+                ["Go Premium", "Team Plans", "Refer a Friend", "Gift Cards", "Scholarships", "Free Classes"],
+                ["Become a Teacher", "Teaching Academy", "Teacher Handbook", "Partnerships"],
+                ["FAQ", "Contact Support", "Forum"]
+            ];
+            str = '';
+            for (var i = 0; i < 4; i++) {
+                str += '<div class="col-lg-3 col-sm-6">' +
+                    '<h4 class="widget-title">' + footer_title[i] + '</h4>' +
+                    '<div class="widget_nav_menu">' +
+                    '<ul>';
+                for (var j = 0; j < footer_navi[i].length; j++) {
+                    str += '<li><a href="#">' + footer_navi[i][j] + '</a></li>';
+                }
+                str += '</ul>' +
+                    '</div>';
+                if (i == 3) {
+                    str += '<h4 class="widget-title">Follow Us On</h4>' +
+                        '<ul class="social-area mb-5 mb-lg-0">' +
+                        '<li>' +
+                        '<a href="#"><i class="fa fa-facebook"></i></a>' +
+                        '</li>' +
+                        '<li>' +
+                        '<a href="#"><i class="fa fa-twitter"></i></a>' +
+                        '</li>' +
+                        '<li>' +
+                        '<a href="#"><i class="fa fa-instagram"></i></a>' +
+                        '</li>' +
+                        '<li>' +
+                        '<a href="#"><i class="fa fa-behance"></i></a>' +
+                        '</li>' +
+                        '<li>' +
+                        '<a href="#"><i class="fa fa-linkedin"></i></a>' +
+                        '</li>' +
+                        '</ul>';
+                }
+                str += '</div>';
+            }
+            footer_navigator_div.innerHTML = str;
+        }
+    </script>
+    <script type="text/javascript">
+        var xmlhttp;
+
+        function loadXMLDoc(url) {
+            xmlhttp = null;
+            if (window.XMLHttpRequest) { // all modern browsers
+                xmlhttp = new XMLHttpRequest();
+            } else if (window.ActiveXObject) { // for IE5, IE6
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            if (xmlhttp != null) {
+                xmlhttp.onreadystatechange = state_Change;
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send(null);
+            } else {
+                alert("Your browser does not support XMLHTTP.");
+            }
+        }
+
+        function state_Change() {
+            if (xmlhttp.readyState == 4) { // 4 = "loaded"
+                if (xmlhttp.status == 200) { // 200 = "OK"
+                    //document.getElementById('p1').innerHTML="This file was last modified on: " + xmlhttp.getResponseHeader('Last-Modified');
+                    console.log(xmlhttp);
+                } else {
+                    alert("Problem retrieving data:" + xmlhttp.statusText);
+                }
+            }
+        }
+    </script>
+    <!-- all plugins here -->
+    <script src="/static/assets/js/vendor.js"></script>
+    <!-- main js  -->
+    <script src="/static/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dominie - Online Education Courses HTML Template</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/assets/css/vendor.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- preloader area start -->
+
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup end-->
+
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a class="main-logo" href="index.html"><img src="/static/assets/img/logo.png" alt="img"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="search" href="#"><i class="fa fa-search"></i></a>
+                    <a class="btn btn-base log-in" href="#">Login</a>
+                </div>
+                <div class="nav-left-part">
+                    <ul class="nav-left-part-list">
+                        <li>
+                            <div class="header-cat-menu">
+                                <i class="fa fa-th"></i>
+                                <a href="#">Courses</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-building"></i> Business</a></li>
+                                    <li><a href="#"><i class="fa fa-th"></i> Design</a></li>
+                                    <li><a href="#"><i class="fa fa-code"></i> Development</a></li>
+                                    <li><a href="#"><i class="fa fa-clone"></i> Marketing</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil-square-o"></i> Math</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-search-inner main-search-bg ml-3">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Search Here">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="themefie_main_menu">
+                    <ul class="navbar-nav menu-open text-left pl-lg-5">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="index-2.html">Home 02</a></li>
+                                <li><a href="index-3.html">Home 03</a></li>
+                                <li><a href="index-4.html">Home 04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="course-view.html">Course View</a></li>
+                                <li><a href="course-view-2.html">Course View 2</a></li>
+                                <li><a href="instructor.html">Instructor</a></li>
+                                <li><a href="instructor-single.html">Instructor Single</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-white log-in" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+    <div class="blog-single-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="comment-area">
+                        <h5>03 Comments</h5>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="{{students.studentImage}}" alt="img">
+                            </div>
+                            <div class="media-body">
+                                <h6>{{students.studentName}}</h6>
+                                <p>{{students.schoolName}}</p>
+                                <p>{{students.selfIntroduction}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact page start -->
+    <div class="contact-page-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3" >
+                    <form class="contact-form cart-details-inner">
+                        <h3>聊天列表</h3>
+                        <div class="single-cart-inner">
+                            <div class="row">
+                                <div class="col-xl-12 col-md-10" id="chatList">
+                                        {% for chat in chatHistory %}
+                                        <div class="media-body align-self-center">
+                                            <a class="btn btn-white w-100 h-25" href='#' onclick="ShowChatLog()"> {{chat.taecherName}}</a>
+                                        </div>
+                                        {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-9">
+                    <form class="contact-form cart-details-inner">
+                        <h3>聊天记录</h3>
+                        <div id="chatLog">
+                            {% for record in chatRecords %}
+                            <p class="single-blog-inner" >{{record.sendName}}：{{record.message}}</p>
+                            {% endfor %}
+                        </div>
+                    </form>
+                    <div class="cart-details-inner">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="single-input-wrap">
+                                    <h3>回复</h3>
+                                    <textarea rows="4" placeholder="请输入内容" id="MessageInput"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-base " onclick="sendMsg()">发送</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var UserID = '';
+                //展示私信对象
+                //请求：{action:"getchatlist"}
+                //回应：{ret:0,ChatList:[UserName:"张老师",UserID:"213730132"},{UserName:"王老师",UserID:"32313132"]}
+                function ShowChatList() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://127.0.0.1:8087/login/in",
+                        dataType: "json",
+                        async: true,
+                        data: {
+                            action: "getchatlist",
+                        },
+                        success: function (result) {
+                            if (result.ret != 0) {
+                                alert("操作失败")
+                            } else {
+                                let newHtml = '';
+                                for (var i = 0; i < result.ChatList.length; i++) {
+                                    newHtml = newHtml +
+                                        '<div class="media-body align-self-center"><a class="btn btn-white w-100 h-25" href="#" onclick="ShowChatLog("' +
+                                        result.ChatList[i].UserID + '")">' +
+                                        result.ChatList[i].UserName + '</a></div>';
+                                }
+                                document.getElementById("chatList").innerHTML = newHtml;
+                            }
+                        },
+                    });
+                }
+                //展示聊天记录
+                //请求：{action:"getchatlog",userID:"对方的用户ID"}
+                //回应：{ret:0,ChatLog:[UserName:"张老师",Chat:"请按时完成作业"},{UserName:"刘同学",Chat:"好的，谢谢老师"]}
+                function ShowChatLog(userID) { //对方的ID
+                    UserID = userID;
+                    $.ajax({
+                        type: "POST",
+                        url: "http://127.0.0.1:8087/login/in",
+                        dataType: "json",
+                        async: true,
+                        data: {
+                            action: "getchatlog",
+                            userID: userID,
+                        },
+                        success: function (result) {
+                            if (result.ret != 0) {
+                                alert("操作失败")
+                            } else {
+                                let newHtml = '';
+                                for (var i = 0; i < result.ChatLog.length; i++) {
+                                    newHtml = newHtml + "<p>" + result.ChatLog[i].UserName + " : " + result
+                                        .ChatLog[i].Chat + "</p>";
+                                }
+                                document.getElementById("chatLog").innerHTML = newHtml;
+                            }
+                        },
+                    });
+                }
+
+                //发送信息
+                //请求：{action:"sendmsg",userID:"2321321",message:"你好！"}
+                //回应：{ret:0}
+                function sendMsg(UserID) { //对方的ID
+                    let msg = document.getElementById('MessageInput').value;
+                    $.ajax({
+                        type: "POST",
+                        url: "http://127.0.0.1:8087/chatroom/sendmsg",
+                        dataType: "json",
+                        async: true,
+                        data: {
+                            action: "sendmsg",
+                            userID: '王星',
+                            receiveName: '张晋波',
+                            message: msg,
+                        },
+                        success: function (result) {
+                            console.log(result)
+                            if (result.ret != 0) {
+                                alert("操作失败")
+                            } else {
+                                console.log(result)
+                                location.reload();
+                            }
+                        },
+                    });
+                }
+            </script>
+
+        </div>
+    </div>
+    </div>
+    <!-- contact page end -->
+
+
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- all plugins here -->
+    <script src="/static/assets/js/vendor.js"></script>
+    <!-- main js  -->
+    <script src="/static/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拜师网</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/assets/css/vendor.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- preloader area start -->
+
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup end-->
+
+    <!-- log-in popup start-->
+    <div class="td-log-in-popup" id="td-log-in-popup">
+        <div class="container">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-5">
+                    <div class="log-in-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/logo-3.png" alt="img">
+                        </div>
+                        <p>请登录以查看课程信息</p>
+                        <a class="btn btn-white" href="#">学生登录</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <div class="log-in-form">
+                        <!--  <button type="button" class="close">
+                            <span>&times;</span>
+                        </button> -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#pills-home">登录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#pills-profile">注册</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pills-home">
+                                <form>
+                                    <div class="form-group">
+                                        <label>用户名/手机/邮箱</label>
+                                        <input type="text"  id='LoginUserName' class="form-control" name="username" placeholder="User Name/Phone/Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>密码</label>
+                                        <input type="password" id="LoginPasswd" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">下次免登录</label>
+                                    </div>
+                                    <a class="lost-password" href="#">找回密码?</a>
+                                    <button type="button" class="btn btn-base w-100" onclick="Login()" >登录</button>
+                                    <div class="other-log-in-area text-center">
+                                    </div>
+                                    <script>
+                                        function Login() {
+                                            let userName = document.getElementById('LoginUserName').value;
+                                            let password = document.getElementById('LoginPasswd').value;
+                                            console.log(userName);
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "http://127.0.0.1:8087/login/in",
+                                                dataType: "json",
+                                                async: true,
+                                                data: {
+                                                    action: "login",
+                                                    username: userName,
+                                                    password: password,
+                                                },
+                                                success: function (result) {
+                                                    console.log(result);
+                                                    if (result.ret != 0) {
+                                                        alert("操作失败 ")
+                                                    } else {
+                                                        var bodyOvrelay = $('#body-overlay');
+                                                        var logInPopup = $('#td-log-in-popup');
+                                                        bodyOvrelay.removeClass('active');
+                                                        logInPopup.removeClass('active');
+                                                        let loginBtnDiv = document.getElementById(
+                                                            'loginBtn');
+                                                        loginBtnDiv.innerHTML = '<a href="http://127.0.0.1:8087/student/classmanage">已登录</a>'
+                                                    }
+                                                },
+                                            });
+                                        }
+                                    </script>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile">
+                                <form method="POST" action="http://127.0.0.1:8087/login/in">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>用户名</label>
+                                                <input type="text" class="form-control" placeholder="User Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>手机号</label>
+                                                <input type="text" class="form-control" placeholder="Phone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>密码</label>
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">下次免登录</label>
+                                    </div>
+                                    <a class="lost-password" href="#">找回密码?</a>
+                                    <button type="submit" class="btn btn-base w-100">登录</button>
+                                    <div class="other-log-in-area text-center">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- log-in popup end-->
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a class="main-logo" href="index.html"><img src="assets/img/logo.png" alt="img"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="search" href="#"><i class="fa fa-search"></i></a>
+                    <a class="btn btn-base log-in" href="#">Login</a>
+                </div>
+                <div class="nav-left-part">
+                    <ul class="nav-left-part-list">
+                        <li>
+                            <div class="header-cat-menu">
+                                <i class="fa fa-th"></i>
+                                <a href="#">课程</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-building"></i> Business</a></li>
+                                    <li><a href="#"><i class="fa fa-th"></i> Design</a></li>
+                                    <li><a href="#"><i class="fa fa-code"></i> Development</a></li>
+                                    <li><a href="#"><i class="fa fa-clone"></i> Marketing</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil-square-o"></i> Math</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-search-inner main-search-bg ml-3">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Search Here" id='SearchInput' onkeydown="if(event.keyCode==13) {search()}">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class=" collapse navbar-collapse" id="themefie_main_menu">
+                    <ul class="navbar-nav menu-open text-left pl-lg-5">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">私信</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">通知</a></li>
+                                <li><a href="index-2.html">互动</a></li>
+                                <li><a href="index-3.html">关注</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">设置</a>
+                            <ul class="sub-menu">
+                                <li><a href="@@@">个人信息</a></li>
+                                <li><a href="@@@">我的主页</a></li>
+                                <li><a href="@@@">我的学业</a></li>
+                                <li><a href="@@@">我的钱包</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop" id="loginBtn" >
+                    <a class="btn btn-white log-in" href="#">登录</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- latest-course start -->
+
+    <div class="latest-course-area pd-top-195">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dmne-sidebar">
+                        <div class="widget widget-select-inner" id="category">
+
+                        </div>
+                        <div class="widget widget-select-inner" id="level">
+
+                        </div>
+                        <div class="widget widget-select-inner" id="tag">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row" id="showAreaDiv">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- latest-course end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area pd-top-140">
+        <div class="container">
+
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumb">
+                            <img src="assets/img/logo.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-right mt-3 mt-md-0 align-self-center">
+                        <p>©2020 <span>Themefie®</span>. All Rights <a href="http://www.bootstrapmb.com/">bootstrapmb</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <script type="text/javascript">
+        var jsonObject;
+        window.onload = function() {
+            var category_set = document.getElementById('category');
+            var level_set = document.getElementById('level');
+            var tag_set = document.getElementById('tag');
+            var str = '';
+            level_list = ['教授', '讲师', '工程师'];
+            category_list = ['全部', '文学', '理学', '工学', '艺学', '商学'];
+            tag_list = ['英语四级', '英语六级', '考研', '雅思', '托福', '法考'];
+
+            // 设置目录的数据
+            str = '<h4 class="widget-title">目录</h4><ul>';
+            for (var i = 0; i < 6; i++) {
+                str += '<li>' +
+                    '<label class="single-select-inner">' +
+                    '<input type="checkbox" onclick="ClickSideBox()" id="Cat_' + i + '"/>' +
+                    '<span class="fa fa-check"></span>' +
+                    category_list[i] +
+                    '</label>' +
+                    '</li>';
+            }
+            str += '</ul>';
+            category_set.innerHTML = str;
+
+            // 设置资历CheckBox的数据 
+            str = '<h4 class="widget-title">资历</h4><ul>';
+            for (var i = 0; i < 3; i++) {
+                str += '<li>' +
+                    '<label class="single-select-inner">' +
+                    '<input type="checkbox" onclick="ClickSideBox()" id="Level_' + i + '"/>' +
+                    '<span class="fa fa-check"></span>' +
+                    level_list[i] +
+                    '</label>'
+                '</li>';
+            }
+            str += '</ul>';
+            level_set.innerHTML = str;
+
+            // 设置标签的数据
+            str = '<h4 class="widget-title">标签</h4><ul>';
+            for (var i = 0; i < 6; i++) {
+                str += '<li>' +
+                    '<label class="single-select-inner">' +
+                    '<input type="checkbox" onclick="ClickSideBox()" id="Tag_' + i + '"/>' +
+                    '<span class="fa fa-check"></span>' +
+                    tag_list[i] +
+                    '</label>'
+                '</li>';
+            }
+            str += '</ul>';
+            tag_set.innerHTML = str;
+
+            // 设置导师数据
+            var url = "http://127.0.0.1:8087/teacher/types?action=get_all_teachers";
+            //var url = "http://192.168.1.107:8087/teacher/types?action=get_all_teachers";
+            loadXMLDoc(url);
+
+        }
+
+        var xmlhttp;
+
+        function loadXMLDoc(url) {
+            xmlhttp = null;
+            if (window.XMLHttpRequest) { // all modern browsers
+                xmlhttp = new XMLHttpRequest();
+            } else if (window.ActiveXObject) { // for IE5, IE6
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            if (xmlhttp != null) {
+                xmlhttp.onreadystatechange = state_Change;
+
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send(null);
+            } else {
+                alert("Your browser does not support XMLHTTP.");
+            }
+        }
+
+        function state_Change() {
+            if (xmlhttp.readyState == 4) { // 4 = "loaded"
+                if (xmlhttp.status == 200) { // 200 = "OK"
+                    //document.getElementById('p1').innerHTML="This file was last modified on: " + xmlhttp.getResponseHeader('Last-Modified');
+                    // console.log(xmlhttp.responseText);
+                    jsonObject = JSON.parse(xmlhttp.responseText);
+                    console.log(jsonObject)
+                    set_teacher_list(jsonObject);
+                } else {
+                    alert("Problem retrieving data:" + xmlhttp.statusText);
+                }
+            }
+        }
+
+        function search() {
+            let keyWord = document.getElementById("SearchInput").value;
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:8087/teacher/search",
+                dataType: "json",
+                async: true,
+                data: {
+                    action: "search",
+                    key_word: keyWord,
+                },
+                success: function(result) {
+                    console.log(result)
+                    if (result.ret != 0) {
+                        alert("操作失败")
+                    } else {
+                        console.log(result.data)
+                        set_teacher_list(result);
+                    }
+                },
+            });
+        }
+
+        function set_teacher_list(jsonObject) {
+
+            var inner_div = document.getElementById('showAreaDiv');
+            str = '';
+            num = 10;
+            var teachersData = jsonObject.data;
+            var loginValue = jsonObject.loginState;
+            console.log(teachersData);
+            for (var i = 0; i < teachersData.length; i++) {
+                str += '<div class="col-lg-4 col-md-6">' +
+                    '<div class="single-course-inner style-two">' +
+                    '<div class="thumb">' +
+                    '<img src="' + teachersData[i].picUrl + '" alt="img">' +
+                    '<div class="rating">' + teachersData[i].rating + '/5 <i class="fa fa-star"></i></div>' +
+                    '<a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>' +
+                    '</div>' +
+                    '<div class="details">' +
+                    '<div class="meta">' +
+                    '<div class="row">' +
+                    '<div class="col-6">' +
+                    '<p>5,957 students</p>' +
+                    '</div>' +
+                    '<div class="col-6 text-right">' +
+                    //'<p>01h 49m</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<h5><a href="http://127.0.0.1:8087/teacher/course_view.html">' + teachersData[i].teacherName + '</a></h5>' +
+                    '<div class="price-inner">' +
+                    '<div class="row">' +
+                    '<div class="col-6">' +
+                    '<p>$33.99</p>' +
+                    '</div>' +
+                    '<div class="col-6 text-right">' +
+                    '<a href="#"><i class="fa fa-shopping-cart"></i></a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            }
+            inner_div.innerHTML = str;
+        }
+
+        function ClickSideBox() {
+            let listt = '';
+            for (var i = 0; i < 6; i++) {
+                if (document.getElementById("Cat_" + i).checked == true) {
+                    listt += category_list[i] + ',';
+                }
+
+            }
+            for (var i = 0; i < 3; i++) {
+                if (document.getElementById("Level_" + i).checked == true) {
+                    listt += level_list[i] + ',';
+
+                }
+            }
+            for (var i = 0; i < 6; i++) {
+                if (document.getElementById("Tag_" + i).checked == true) {
+                    listt += tag_list[i] + ',';
+                }
+            }
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:8087/teacher/types",
+                dataType: "json",
+                async: true,
+                data: {
+                    action: "get_filter_teachers",
+                    type: listt,
+                },
+                success: function(result) {
+                    console.log(result)
+                    if (result.ret != 0) {
+                        alert("操作失败")
+                    } else {
+                        console.log(result.data)
+                        set_teacher_list(result);
+                    }
+                },
+            });
+        }
+    </script>
+
+    <!-- all plugins here -->
+    <script src="/static/assets/js/vendor.js"></script>
+    <!-- main js  -->
+    <script src="/static/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dominie - Online Education Courses HTML Template</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/assets/css/vendor.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/css/responsive.css">
+
+</head>
+<body>
+
+    <!-- preloader area start -->
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup end-->
+
+    <!-- log-in popup start-->
+    <div class="td-log-in-popup" id="td-log-in-popup">
+        <div class="container">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-5">
+                    <div class="log-in-wrap">
+                        <div class="thumb">
+                            <img src="http://127.0.0.1:8087/assets/img/logo-3.png" alt="img">
+                        </div>
+                        <p>Your student account is you portal to all things Dominie your classroom, projects, forums, carees, resources.</p>
+                        <a class="btn btn-white" href="#">Student</a>
+                        <a class="btn btn-border-white" href="#">Instructirs</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <div class="log-in-form">
+                       <!--  <button type="button" class="close">
+                            <span>&times;</span>
+                        </button> -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#pills-home">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#pills-profile">Register</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pills-home">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Username or email address*</label>
+                                        <input type="text" class="form-control" placeholder="youremail@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                    <a class="lost-password" href="#">Lost your password?</a>
+                                    <button type="submit" class="btn btn-base w-100">Login</button>
+                                    <div class="other-log-in-area text-center">
+                                        <h6>OR LOGIN WITH</h6>
+                                        <a class="btn btn-fb" href="#"><i class="fa fa-facebook"></i>FACEBOOK</a>
+                                        <a class="btn btn-google" href="#"><i class="fa fa-google"></i>GOOGLE</a>
+                                    </div>                                
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Full Name</label>
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>User or email*</label>
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                    <a class="lost-password" href="#">Lost your password?</a>
+                                    <button type="submit" class="btn btn-base w-100">Login</button>
+                                    <div class="other-log-in-area text-center">
+                                        <h6>OR LOGIN WITH</h6>
+                                        <a class="btn btn-fb" href="#"><i class="fa fa-facebook"></i>FACEBOOK</a>
+                                        <a class="btn btn-google" href="#"><i class="fa fa-google"></i>GOOGLE</a>
+                                    </div>                                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- log-in popup end-->
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#themefie_main_menu" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a class="main-logo" href="index.html"><img src="http://127.0.0.1:8087/assets/img/logo.png" alt="img"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="search" href="#"><i class="fa fa-search"></i></a>
+                    <a class="btn btn-base log-in" href="#">Login</a>
+                </div>
+                <div class="nav-left-part">
+                    <ul class="nav-left-part-list">
+                        <li>
+                            <div class="header-cat-menu">
+                                <i class="fa fa-th"></i>
+                                <a href="#">Courses</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-building"></i> Business</a></li>
+                                    <li><a href="#"><i class="fa fa-th"></i> Design</a></li>
+                                    <li><a href="#"><i class="fa fa-code"></i> Development</a></li>
+                                    <li><a href="#"><i class="fa fa-clone"></i> Marketing</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil-square-o"></i> Math</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-search-inner main-search-bg ml-3">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Search Here">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="themefie_main_menu">
+                    <ul class="navbar-nav menu-open text-left pl-lg-5">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="index-2.html">Home 02</a></li>
+                                <li><a href="index-3.html">Home 03</a></li>
+                                <li><a href="index-4.html">Home 04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="course-view.html">Course View</a></li>
+                                <li><a href="course-view-2.html">Course View 2</a></li>
+                                <li><a href="instructor.html">Instructor</a></li>
+                                <li><a href="instructor-single.html">Instructor Single</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-white log-in" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+    
+    <!-- banner start -->
+    <div class="banner-area">
+        <div class="container container-large">
+            <div class="banner-area-inner" style="background-image:url('http://127.0.0.1:8087/assets/img/banner/4.png')">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="banner-inner">
+                            <h2 class="mb-0">让学生不再为问题所困扰 好成绩来自于好老师的指导</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- counter start -->
+    <div class="counter-area pd-top-110">
+        <div class="container">
+            <ul class="counter-area-inner">
+                <li>
+                    <div class="single-counter-inner text-center">
+                        <h2><span class="count-num">295</span>M</h2>
+                        <h6>学生数量</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-counter-inner text-center">
+                        <h2><span>57</span>K</h2>
+                        <h6>优质导师</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-counter-inner text-center">
+                        <h2><span class="count-num">150</span>K</h2>
+                        <h6>精品课程</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-counter-inner text-center">
+                        <h2><span class="count-num">79</span>K</h2>
+                        <h6>免费课程</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-counter-inner text-center">
+                        <h2><span class="count-num">65</span>+</h2>
+                        <h6>专业领域</h6>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- counter end -->
+
+    <!-- about start -->
+    <div class="about-area pd-top-110">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-last">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="thumb about-thumb-inner">
+                                <img src="http://127.0.0.1:8087/assets/img/other/2-0.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="thumb about-thumb-inner">
+                                <img src="http://127.0.0.1:8087/assets/img/other/2-1.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="thumb about-thumb-inner">
+                                <img src="http://127.0.0.1:8087/assets/img/other/2-2.jpg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-first align-self-center">
+                    <div class="section-title mb-0 mt-3 mt-lg-0">
+                        <h2 class="title">致力于成长的拜师网站</h2>
+                        <p>重新定义师生关系，让师生不再局限于课堂</p>
+                        <a class="btn btn-base" href="http://127.0.0.1:8087/index.html">View our Teacher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about End -->
+
+    <!-- about start -->
+    <div class="about-area pd-top-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="thumb about-thumb-inner">
+                        <img src="http://127.0.0.1:8087/assets/img/other/3.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="section-title mb-0 mt-3 mt-lg-0">
+                        <h2 class="title">精品课程</h2>
+                        <p>来自各952 211 高校老师亲自授课</p>
+                        <p>线上直播，与老师实时互动，第一时间了解老师水平，寻得自己的师傅</p>
+                        <a class="btn btn-base" href="http://127.0.0.1:8087/course.html">View our Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about End -->
+
+    <!-- feedback area start -->
+    <div class="feedback-intro-area pd-top-140">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">平台人气导师</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-filter-area row">
+                <div class="fdb-sizer col-1"></div>
+                <!-- feedback-item -->
+                {% for intro in introList%}
+                <div class="dmne-fdb-item col-lg-4 col-md-6">
+                    <div class="single-feedback-inner">
+                        <div class="thumb">
+                            <img src="http://127.0.0.1:8087/assets/img/icon/4.png" alt="image">
+                        </div>
+                        <div class="details mb-4">
+                            <p>{{intro.teacherIntro}}</p>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="{{intro.icon}}" alt="img">
+                            </div>
+                            <div class="media-body align-self-center">
+                                <h6>{{intro.teacherName}}</h6>
+                                <p>{{intro.teacherPosition}} & {{intro.teacherIntro}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+    <!-- feedback area end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area pd-top-110">
+        <div class="container">
+            <div class="footer-top text-center">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <h2>Subscribe Newsletter</h2>
+                        <p>Small team with big ideas! We provide UI/UX Design, Development, premium WordPress themes, plugins</p>
+                        <div class="subscribe-inner-wrap">
+                            <input type="text" placeholder="Enter Your Email">
+                            <button class="btn btn-base">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="widget-title">Categories</h4>
+                    <div class="widget_nav_menu">
+                        <ul>
+                            <li><a href="#">All Courses</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Design & Branding</a></li>
+                            <li><a href="#">Adobe Creative Cloud</a></li>
+                            <li><a href="#">Storytelling & Voice Over</a></li>
+                            <li><a href="#">Web & SEO</a></li>
+                            <li><a href="#">Programs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="widget-title">Community</h4>
+                    <div class="widget_nav_menu">
+                        <ul>
+                            <li><a href="#">Go Premium</a></li>
+                            <li><a href="#">Team Plans</a></li>
+                            <li><a href="#">Refer a Friend</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                            <li><a href="#">Free Classes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="widget-title">Teaching</h4>
+                    <div class="widget_nav_menu">
+                        <ul>
+                            <li><a href="#">Become a Teacher</a></li>
+                            <li><a href="#">Teaching Academy</a></li>
+                            <li><a href="#">Teacher Handbook</a></li>
+                            <li><a href="#">Partnerships</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="widget-title">Support</h4>
+                    <div class="widget_nav_menu mb-5">
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                    <h4 class="widget-title">Follow Us On</h4>
+                    <ul class="social-area mb-5 mb-lg-0">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumb">
+                            <img src="http://127.0.0.1:8087/assets/img/logo.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-right mt-3 mt-md-0 align-self-center">
+                        <p>©2020 <span>Themefie®</span>. All Rights <a href="http://www.bootstrapmb.com/">bootstrapmb</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+
+    <!-- all plugins here -->
+    <script src="/static/assets/js/vendor.js"></script>
+    <!-- main js  -->
+    <script src="/static/assets/js/main.js"></script>
+</body>
+</html>
